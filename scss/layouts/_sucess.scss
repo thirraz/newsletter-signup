@@ -57,8 +57,25 @@
 
     @include for-tablet-landscape {
         min-height: 100vh;
+        min-width: 100vw;
         border-radius: 0;
 
         box-shadow: none;
+
+        &__paragraph {
+            font-size: 2.3rem;
+            line-height: 3rem;
+        }
+
+        &__button {
+            font-size: 2.2rem;
+            min-height: 8rem;
+        }
+    }
+
+    @include for-phones {
+        &__paragraph {
+            font-size: 1.6rem;
+        }
     }
 }

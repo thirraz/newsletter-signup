@@ -244,8 +244,22 @@ body {
 @media only screen and (max-width: 56.25em) {
   .success {
     min-height: 100vh;
+    min-width: 100vw;
     border-radius: 0;
     box-shadow: none;
+  }
+  .success__paragraph {
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+  .success__button {
+    font-size: 2.2rem;
+    min-height: 8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .success__paragraph {
+    font-size: 1.6rem;
   }
 }
 
