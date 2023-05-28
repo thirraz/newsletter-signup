@@ -1,0 +1,30 @@
+.cover {
+    padding: 1.8rem;
+    overflow: hidden;
+
+    &__illustration {
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    @include for-tablet-landscape {
+        background-image: url(../../assets/images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        grid-template-columns: 1fr;
+
+        grid-row: 1;
+        padding: 0;
+
+        border-bottom-left-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+
+        &__illustration {
+            max-width: 100%;
+            min-height: 100%;
+            display: none;
+        }
+    }
+}

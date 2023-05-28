@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<title>
+			Frontend Mentor | Newsletter sign-up form with success message
+		</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="cta">
+				<h1 class="cta__heading">Stay updated!</h1>
+				<p class="cta__paragraph">
+					Join 60,000+ product managers receiving monthly updates on:
+				</p>
+				<ul class="cta__advantages">
+					<li class="cta__advantage">
+						Product discovery and building what matters
+					</li>
+					<li class="cta__advantage">
+						Measuring to ensure updates are a success
+					</li>
+					<li class="cta__advantage">And much more!</li>
+				</ul>
+
+				<form class="cta__form">
+					<p class="cta__form__error">Valid email required</p>
+
+					<label for="email">Email address</label>
+					<input
+						type="text"
+						name="email"
+						id="email"
+						placeholder="email@company.com"
+						class="email__input"
+					/>
+					<input
+						type="submit"
+						value="Subscribe to monthly newsletter"
+						class="submit__input"
+					/>
+				</form>
+			</div>
+			<div class="cover">
+				<img
+					src="./assets/images/illustration-sign-up-desktop.svg"
+					alt="illustration sign up image"
+					class="cover__illustration"
+				/>
+			</div>
+		</div>
+
+		<div class="success">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="64"
+				height="64"
+				viewBox="0 0 64 64"
+			>
+				<defs>
+					<linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+						<stop offset="0%" stop-color="#FF6A3A" />
+						<stop offset="100%" stop-color="#FF527B" />
+					</linearGradient>
+				</defs>
+				<g fill="none">
+					<circle cx="32" cy="32" r="32" fill="url(#a)" />
+					<path
+						stroke="#FFF"
+						stroke-width="4"
+						d="m18.286 34.686 8.334 7.98 19.094-18.285"
+					/>
+				</g>
+			</svg>
+			<h1 class="success__heading">Thanks for subscribing!</h1>
+			<p class="success__paragraph">
+				A confirmationn email hass been sent to
+				<span class="success__email">ash@loremcompany.com</span>. Please
+				open it and click the button inside to confirm your subscription
+			</p>
+			<button class="success__button">Dismiss message</button>
+		</div>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>

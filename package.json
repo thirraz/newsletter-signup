@@ -1,0 +1,12 @@
+{
+	"name": "newsletter-sign-up-with-success-message-main",
+	"version": "1.0.0",
+	"description": "![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)",
+	"main": "index.js",
+	"scripts": {
+		"scss": "sass --watch scss/main.scss:css/styles.css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
