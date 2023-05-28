@@ -9,6 +9,8 @@
     border-radius: 20px;
     background: var(--color-white);
 
+    box-shadow: 4px 9px 50px rgba(0, 0, 0, 0);
+
     display: none;
 
     & svg {
@@ -51,5 +53,12 @@
 
     &__email {
         font-weight: bold;
+    }
+
+    @include for-tablet-landscape {
+        min-height: 100vh;
+        border-radius: 0;
+
+        box-shadow: none;
     }
 }
