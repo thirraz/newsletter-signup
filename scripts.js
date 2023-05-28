@@ -37,6 +37,3 @@ inputSubmit.addEventListener("click", (e) => {
 dismissMsg.addEventListener("click", () => {
 	location.reload()
 })
-
-container.style.display = "none"
-success.style.display = "flex"
